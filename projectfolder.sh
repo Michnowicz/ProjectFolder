@@ -1,5 +1,5 @@
 #//////////////////////dossiers//////////////////////
-mkdir -p public/{css,sass/modules,HTML,img}
+mkdir -p public/{css,src/sass/modules,HTML,assets/img}
 
 
 
@@ -16,7 +16,7 @@ cat >> index.html << EOF
         <title>Document</title>
         
         <script src="https://kit.fontawesome.com/1659b3772d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./public/CSS/style.css">
+        <link rel="stylesheet" href="./public/css/style.css">
     </head>
 
 
@@ -43,9 +43,9 @@ touch public/css/style.css
 #//////////////////////fichiers SASS//////////////////////
 
 #----- app.sass -----
-touch public/sass/app.sass
+touch public/src/sass/app.sass
 
-cat >> public/sass/app.sass << EOF
+cat >> public/src/sass/app.sass << EOF
 @import ./_variables
 @import ./_color
 @import ./_fonts.sass
@@ -55,23 +55,23 @@ EOF
 
 
 #----- _variables.sass -----
-touch public/sass/_variables.sass
+touch public/src/sass/_variables.sass
 
 
 
 #----- _color.sass -----
-touch public/sass/_color.sass
+touch public/src/sass/_color.sass
 
 
 
 #----- _fonts.sass -----
-touch public/sass/_fonts.sass
+touch public/src/sass/_fonts.sass
 
 
 
 #----- _style.sass -----
-touch public/sass/modules/_style.sass
-cat >> public/sass/modules/_style.sass << EOF
+touch public/src/sass/modules/_style.sass
+cat >> public/src/sass/modules/_style.sass << EOF
 @import ./_body
 @import ./_h1
 @import ./_h2
@@ -86,37 +86,37 @@ EOF
 
 
 #----- _body.sass -----
-touch public/sass/modules/_body.sass
+touch public/src/sass/modules/_body.sass
 
 
 
 #----- _h1.sass -----
-touch public/sass/modules/_h1.sass
+touch public/src/sass/modules/_h1.sass
 
 
 #----- _h2.sass -----
-touch public/sass/modules/_h2.sass
+touch public/src/sass/modules/_h2.sass
 
 
 #----- _h3.sass -----
-touch public/sass/modules/_h3.sass
+touch public/src/sass/modules/_h3.sass
 
 
 #----- _p.sass -----
-touch public/sass/modules/_p.sass
+touch public/src/sass/modules/_p.sass
 
 
 #----- _button.sass -----
-touch public/sass/modules/_button.sass
+touch public/src/sass/modules/_button.sass
 
 
 #----- _header.sass -----
-touch public/sass/modules/_header.sass
+touch public/src/sass/modules/_header.sass
 
 
 #----- _nav.sass -----
-touch public/sass/modules/_nav.sass
+touch public/src/sass/modules/_nav.sass
 
 
 #----- _footer.sass -----
-touch public/sass/modules/_footer.sass
+touch public/src/sass/modules/_footer.sass
