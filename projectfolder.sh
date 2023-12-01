@@ -14,17 +14,17 @@ cat >> index.html << EOF
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        
+
         <script src="https://kit.fontawesome.com/1659b3772d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./public/css/style.css">
-    </head>
+        </head>
 
 
 
     <body>
         
 
-
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
 EOF
@@ -50,6 +50,7 @@ cat >> public/src/sass/app.sass << EOF
 @import ./_color
 @import ./_fonts.sass
 @import ./modules/_style
+@import ../../node_modules/bootstrap/dist/css/bootstrap.min.css
 EOF
 
 
@@ -120,3 +121,18 @@ touch public/src/sass/modules/_nav.sass
 
 #----- _footer.sass -----
 touch public/src/sass/modules/_footer.sass
+
+
+
+#////////////////////// .gitignore //////////////////////
+touch .gitignore
+
+cat >> .gitignore << EOF
+node_modules
+EOF
+
+
+
+#////////////////////// bootstrap //////////////////////
+npm install bootstrap
+
