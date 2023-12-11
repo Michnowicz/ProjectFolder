@@ -1,5 +1,5 @@
 #//////////////////////dossiers//////////////////////
-mkdir -p public/{css,src/sass/modules,HTML,assets/img}
+mkdir -p public/{js,css,src/sass/modules,HTML,assets/img}
 
 
 
@@ -33,6 +33,12 @@ EOF
 
 
 
+#////////////////////// js //////////////////////
+touch public/js/main.js
+
+
+
+
 #//////////////////////fichiers CSS//////////////////////
 touch public/css/style.css
 
@@ -51,6 +57,7 @@ cat >> public/src/sass/app.sass << EOF
 @import ./_fonts.sass
 @import ./modules/_style
 @import ../../node_modules/bootstrap/dist/css/bootstrap.min.css
+@import ../../node_modules/@fortawesome/fontawesome-free/css/all.min.css
 EOF
 
 
@@ -136,3 +143,16 @@ EOF
 #////////////////////// bootstrap //////////////////////
 npm install bootstrap
 
+
+
+
+
+#////////////////////// Font Awesome //////////////////////
+npm install @fortawesome/fontawesome-free
+
+
+
+
+
+#////////////////////// sass --watch //////////////////////
+sass --watch ./public/src/sass/app.sass ./public/css/style.css
